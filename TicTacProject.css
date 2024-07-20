@@ -12,14 +12,12 @@
 }
 #main{
     max-width: 500px;
-    height: 650px;
+    height: 600px;
     margin: auto;  
-    /* background-color: white;   */
 }
 h1{
     width: 500px;
-    height: 100px;
-    /* background-color: red; */
+    height: 90px;
     color: #b0413e;
     text-align: center;
     font-size: 50px;
@@ -31,7 +29,6 @@ h1{
 {
     width: 400px;
     height: 400px;
-    /* background-color: skyblue; */
     margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +45,7 @@ h1{
     border-style: none;
 }
 #reset{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 100px;
     float: left;
     position: absolute;
@@ -100,7 +97,6 @@ h1{
     filter: brightness(.8);
 }
 
-/* The switch - the box around the slider */
 .switch {
     font-size: 17px;
     position: relative;
@@ -108,17 +104,17 @@ h1{
     width: 1.2em;
     height: 3.3em;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   
-  /* Hide default HTML checkbox */
+
   .switch .chk {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
+ 
   .slider {
     position: absolute;
     cursor: pointer;
