@@ -1,0 +1,185 @@
+@charset "UTF=8";
+*{
+   margin: 0px;
+
+}
+.dark{
+  background-color: black;
+  
+}
+.light{
+  background-color: white;
+}
+#main{
+    max-width: 500px;
+    height: 650px;
+    margin: auto;  
+    /* background-color: white;   */
+}
+h1{
+    width: 500px;
+    height: 100px;
+    /* background-color: red; */
+    color: #b0413e;
+    text-align: center;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: line-through orange;
+}
+#con1
+{
+    width: 400px;
+    height: 400px;
+    /* background-color: skyblue; */
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:#00A97F ;
+    font-size: 40px;
+    border-radius: 15px;
+    border-style: none;
+}
+#reset{
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    position: absolute;
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+#reset::before, #reset::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+#reset::before {
+    top: -1em;
+    left: -1em;
+}
+#reset::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+#reset:hover::before, #reset:hover::after {
+    height: 410px;
+    width: 410px;
+}
+#reset:hover {
+    color: rgb(10, 25, 30);
+}
+   
+#reset:active {
+    filter: brightness(.8);
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 1.2em;
+    height: 3.3em;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch .chk {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(230, 0, 0);
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: .5em;
+    width: 2.4em;
+    border-radius: 5px;
+    left: -0.6em;
+    top: 0.2em;
+    background-color: rgb(68, 66, 66);
+    box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+    transition: .4s;
+  }
+  
+  .slider:before, .slider:after {
+    content: "";
+    display: block;
+  }
+  
+  .slider:after {
+    background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,rgb(78, 78, 78) 0,rgb(141, 135, 135),rgb(97, 96, 96) 20%,rgb(97, 95, 95) 20%,rgb(99, 99, 99) 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,rgb(95, 94, 94) 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #464646;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%) rotate(90deg);
+    transform-origin: 25% 50%;
+    position: relative;
+    top: 0.5em;
+    left: 0.55em;
+    width: 2em;
+    height: 1em;
+    box-sizing: border-box;
+  }
+  
+  .chk:checked + .slider {
+    background-color: limegreen;
+  }
+  
+  .chk:focus + .slider {
+    box-shadow: 0 0 1px limegreen;
+  }
+  
+  .chk:checked + .slider:before {
+    transform: translateY(2.3em);
+  }
+  
+  .chk:checked + .slider:after {
+    transform: rotateZ(90deg) rotateY(180deg) translateY(0.45em) translateX(-1.4em);
+  }
